@@ -1,5 +1,5 @@
 <?php
-	$title = "Uppdrag 5 | Start";
+	$title = "Uppdrag 5 | SQL";
 
 	include 'core/init.php';
 	include 'incl/header.php';
@@ -13,8 +13,6 @@
 	<a href="#">ROOT</a><span> > </span><a href="#">FILER</a><span> > </span><a href="#">SQL</a>
 </div>
 
-<section>
-
-</section>
+<section></section>
 
 <?php include 'incl/footer.php'; ?>
