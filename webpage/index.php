@@ -3,6 +3,7 @@
 
 	include 'core/init.php';
 	include 'incl/header.php';
+
 ?>
 
 <header>
@@ -13,6 +14,11 @@
 	<a href="#">ROOT</a><span> > </span><a href="#">FILER</a><span> > </span><a href="#">SQL</a>
 </div>
 
-<section></section>
+<section>
+<?php
+	//$menu = new CSQLFileMenu();
+	$sqlFile = new CSQLFile("test.txt");
+?>
+</section>
 
 <?php include 'incl/footer.php'; ?>
