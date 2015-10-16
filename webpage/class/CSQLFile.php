@@ -33,7 +33,7 @@ class CSQLFile {
 		$prepare 	=	 $this->con->prepare($this->sql);
 
 		# Kör sql-satsen och retunerar den
-		return $prepare->execute()
+		return $prepare->execute();
 	}
 
 	private function generateHTMLtableResult() {
