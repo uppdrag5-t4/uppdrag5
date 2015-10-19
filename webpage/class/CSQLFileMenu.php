@@ -1,29 +1,45 @@
 <?php
 
 class CSQLFileMenu {
-	private $file;
-	private $html;
+	private $_html;
+	private $_navigation;
 
 	public function __construct() {
+		if(!isset($_POST['path']))
+			$dir = "";
+		else
+			$dir = $_POST['path'];
 
-		# Om man ska visa den lägsta menyn
-		if(isset($_POST['low'])) {
+		var_dump($this->_readTree($dir));
+	}
 
+	private function _readTree($dir) {
+		$fullDir = "./SQL".$dir;
+		$this->_navigation = $fullDir;
+
+		if(is_dir($fullDir)) {
+			$files = scandir($fullDir);
+
+			for ($i = 0; $i < count($files); $i++) {
+				if($files[$i] == '.' || $files[$i] == '..') continue;
+
+				$info = pathinfo($files[$i]);
+
+				if(isset($info['extension']))
+					$file = basename(ucfirst(str_replace('_', ' ', $files[$i])), '.'.$info['extension']);
+				else
+					$file = basename(ucfirst(str_replace('_', ' ', $files[$i])));
+
+				@$this->_html .= "<form method='POST'>";
+				$this->_html .= "<input type='submit' value='".$file."'>";
+				$this->_html .= "<input type='hidden' name='path' value='{$dir}/{$files[$i]}'>";
+				$this->_html .= "</form>";
+			}
+
+			return false;
 		}
-		# Om amn ska visa den mellersta menyn
-		else if(isset($_POST['sub'])) {
 
-		}
-		# Om man ska visa den översta menyn
-		else {
-			$this->html = "<form>";
-			$this->html .= "<input type='button' name='' value='0 Skapa tabell'>";
-			$this->html .= "<input type='button' name='' value='1 Fyll tabeller'>";
-			$this->html .= "<input type='button' name='' value='2 Radera'>";
-			$this->html .= "<input type='button' name='' value='3 Hämta data'>";
-			$this->html .= "</form>";
-		}
-
+		return true;
 	}
 
 	public function getNavigation() {
@@ -31,6 +47,6 @@ class CSQLFileMenu {
 	}
 
 	public function getContent() {
-		echo $this->html;
+		echo $this->_html;
 	}
 }

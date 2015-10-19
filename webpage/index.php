@@ -16,7 +16,8 @@
 
 <section>
 <?php
-	//$menu = new CSQLFileMenu();
+	$menu = new CSQLFileMenu();
+	$menu->getContent();
 	$sqlFile = new CSQLFile("test.txt");
 ?>
 </section>
