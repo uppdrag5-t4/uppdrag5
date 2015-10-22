@@ -1,0 +1,2 @@
+# Ignorera alla .DS_Store filer som genereras på mac
+.DS_Store
