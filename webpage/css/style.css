@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #2C3539;
 }
 
 header {
@@ -65,3 +66,37 @@ section form input[type=submit]:hover {
 	background: #BBB;
 	cursor: pointer;
 }
+
+.paragraf {
+	font-size: 1.5 em;
+	margin: 20px;
+	font-family: Trebuchet MS;
+	color: ghostwhite;
+}
+
+
+.huvudrub {
+	font-size: 2em; 
+	margin: 20px;
+	font-family: Trebuchet MS;
+	color: ghostwhite;
+	text-decoration: underline;
+}
+
+table {
+	margin: 20px;
+	border: 2px solid ghostwhite;
+	border-radius: 5px;
+}
+
+th {
+	font-size: 1.2em;
+	font-family: Courier New;
+	color: ghostwhite;
+}
+
+td {
+	font-family: Courier New;
+	color: ghostwhite;
+}
+

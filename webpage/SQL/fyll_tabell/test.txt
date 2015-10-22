@@ -1,5 +1,0 @@
-{
-	"ins": "abc123",
-	"sql": "SELECT * FROM",
-	"res": "Hämta allt från databasen"
-}
