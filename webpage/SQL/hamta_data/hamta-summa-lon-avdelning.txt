@@ -1,0 +1,3 @@
+Visar hur mycket varje avdelning betalar i lön varje månad
+~~
+SELECT avdelningLarare, SUM(lonLarare) FROM larare GROUP BY (avdelningLarare)

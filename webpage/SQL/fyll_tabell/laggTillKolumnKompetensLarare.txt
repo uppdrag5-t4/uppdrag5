@@ -1,0 +1,5 @@
+Lägger till kolumnen kompetensLarare i tabellen larare
+~~
+ALTER TABLE larare ADD kompetensLarare INT DEFAULT '5' NOT NULL
+~~
+SELECT * FROM larare

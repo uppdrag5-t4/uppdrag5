@@ -1,0 +1,3 @@
+Visar alla lärare som har en akronym som börjar på M
+~~
+SELECT * FROM larare WHERE akronymLarare LIKE 'M%'

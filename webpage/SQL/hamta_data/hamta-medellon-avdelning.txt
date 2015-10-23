@@ -1,0 +1,3 @@
+Visar medellönen på de olika avdelningarna 
+~~
+SELECT avdelningLarare, AVG(lonLarare) FROM larare GROUP BY avdelningLarare

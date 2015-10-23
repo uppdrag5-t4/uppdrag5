@@ -1,0 +1,3 @@
+Visa de tre läsa som tjänar mest
+~~
+SELECT * FROM larare ORDER BY lonLarare DESC LIMIT 3

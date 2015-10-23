@@ -1,0 +1,3 @@
+Hämta lärare från tabellen larare med Akronym MOS, MOL eller BBE
+~~
+SELECT * FROM larare WHERE akronymLarare IN('MOS', 'MOL', 'BBE')

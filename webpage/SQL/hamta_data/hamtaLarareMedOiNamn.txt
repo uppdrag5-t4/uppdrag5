@@ -1,0 +1,3 @@
+Visar alla lärare som har bokstaven 'o' i namnet
+~~
+SELECT * FROM larare WHERE namnLarare LIKE '%o%'

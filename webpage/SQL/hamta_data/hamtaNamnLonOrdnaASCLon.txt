@@ -1,0 +1,3 @@
+Hämtar lärarnamn och lön från tabellen larare 
+~~
+SELECT namnLarare, lonLarare FROM larare ORDER BY lonLarare ASC;

@@ -1,0 +1,3 @@
+Visar de vanligaste lönera från tabeller larare
+~~
+SELECT lonLarare, COUNT(lonLarare) as Antal FROM larare GROUP BY lonLarare HAVING COUNT(lonLarare) > 1

@@ -1,0 +1,11 @@
+Uppdatera status (öka kompetens höj/minska lön) i tabellen lärare
+~~
+UPDATE larare SET kompetensLarare = '7', lonLarare = '21000' WHERE namnLarare = 'Mikael';
+
+UPDATE larare SET lonLarare = lonLarare + '6000' WHERE namnLarare = 'Mats-Ola';
+
+UPDATE larare SET kompetensLarare = '9', lonLarare = '21000' WHERE namnLarare = 'Betty';
+
+UPDATE larare SET lonLarare = lonLarare - '1200' WHERE namnLarare = 'Andreas';
+~~
+SELECT * FROM larare

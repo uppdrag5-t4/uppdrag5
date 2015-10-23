@@ -2,6 +2,30 @@ Lägg till lärare i tabellen Lärare
 ~~
 INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare) VALUES('ACA', 'APS', 'Anders', '15000', '1967-09-07 00:00:00');
 
-INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare) VALUES('ACA', 'APS', 'Andreas', '15000', '1988-08-07 00:00:00');
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare) VALUES('AJA', 'APS', 'Andreas', '15000', '1988-08-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('BBE', 'APS', 'Betty', '15000', '1968-07-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('BHR', 'AIS', 'Birgitta', '15000', '1964-02-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('CJH', 'APS', 'Conny', '15000', '1943-01-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('CSA', 'APS', 'Charlie', '15000', '1969-04-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('LRA', 'APS', 'Linda', '15000', '1975-03-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('MAP', 'APS', 'Marie', '15000', '1972-06-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('MOL', 'AIS', 'Mats-Ola', '15000', '1978-12-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare)
+VALUES('MOS', 'AIS', 'Mikael', '15000', '1968-03-07 00:00:00');
 ~~
 SELECT * FROM larare

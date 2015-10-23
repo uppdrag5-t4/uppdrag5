@@ -1,0 +1,3 @@
+Visar lärare med lön över 20000 från tabellen larare 
+~~
+SELECT * FROM larare WHERE lonLarare >= '20000'

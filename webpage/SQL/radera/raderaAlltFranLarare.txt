@@ -1,0 +1,5 @@
+Raderar allt från tabellen lärare
+~~
+DELETE FROM larare
+~~
+SELECT * FROM larare

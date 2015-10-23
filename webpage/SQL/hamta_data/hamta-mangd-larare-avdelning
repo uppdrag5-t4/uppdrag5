@@ -1,0 +1,3 @@
+Visar hur många larare som jobbar på de olika avdelningarna
+~~
+SELECT avdelningLarare, COUNT(avdelningLarare) FROM larare GROUP BY avdelningLarare 

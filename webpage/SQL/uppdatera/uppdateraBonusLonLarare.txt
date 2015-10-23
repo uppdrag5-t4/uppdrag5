@@ -1,0 +1,5 @@
+Öka lönen med 10% för samtliga lärare
+~~
+UPDATE larare SET lonLarare = lonLarare * '1.1'
+~~
+SELECT * FROM larare

@@ -1,0 +1,3 @@
+Visar högsta lönen som en lärare har och vem som har den ur tabellen larare
+~~
+SELECT namnLarare, MAX(lonLarare) FROM larare LIMIT 1

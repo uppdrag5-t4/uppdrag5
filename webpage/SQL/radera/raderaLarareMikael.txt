@@ -1,0 +1,5 @@
+Raderar läraren Mikael från tabellen lärare
+~~
+DELETE FROM larare WHERE namnLarare = 'Mikael'
+~~
+SELECT * FROM larare

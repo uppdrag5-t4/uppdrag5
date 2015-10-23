@@ -1,0 +1,5 @@
+Raderar alla lärare som har avdelning AIS
+~~
+DELETE FROM larare WHERE avdelningLarare = 'AIS'
+~~
+SELECT * FROM larare

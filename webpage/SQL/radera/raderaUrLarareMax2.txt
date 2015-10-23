@@ -1,0 +1,5 @@
+Radera från tabellen lärare (högst två)
+~~
+DELETE FROM larare LIMIT 2
+~~
+SELECT * FROM larare

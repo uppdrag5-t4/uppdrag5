@@ -1,0 +1,3 @@
+Visa avdelningar vars medellön är över 18000
+~~
+SELECT avdelningLarare FROM larare GROUP BY avdelningLarare HAVING AVG(lonLarare) > '18000'

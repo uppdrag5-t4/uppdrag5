@@ -1,0 +1,3 @@
+Visa alla rader ur tabellen larare med avdelningen AIS 
+~~
+SELECT * FROM larare WHERE avdelningLarare = 'AIS'

@@ -1,0 +1,3 @@
+Hämta avdelning och lärarakronym i samma kolumn 
+~~
+SELECT CONCAT(avdelningLarare, '/', akronymLarare) AS 'Avdelning/Akronym' FROM larare

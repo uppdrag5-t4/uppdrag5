@@ -1,0 +1,3 @@
+Hämta namn och lön från tabellen larare och byt ut rubrikerna
+~~
+SELECT namnLarare AS Lärare, lonLarare AS Lön FROM larare
