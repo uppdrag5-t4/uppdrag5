@@ -1,9 +1,13 @@
 <?php
+	# Sätt titeln på sidan
 	$title = "Uppdrag 5 | SQL";
 
+	# Inkludera spl_autoloader_register samt header
 	include 'core/init.php';
 	include 'incl/header.php';
 
+	# Skapa en instans av klassen CSQLFilemenu
+	$menu = new CSQLFileMenu();
 ?>
 
 <header>
@@ -11,12 +15,11 @@
 </header>
 
 <div id="navlist">
-	<a href="#">ROOT</a><span> > </span><a href="#">FILER</a><span> > </span><a href="#">SQL</a>
+	<?php $menu->getNavigation(); ?>
 </div>
 
 <section>
 <?php
-	$menu = new CSQLFileMenu();
 	$menu->getContent();
 ?>
 </section>

@@ -1,0 +1,5 @@
+Skapar en tabell
+~~
+CREATE TABLE Larare(akronymLarare CHAR(3), avdelningLarare CHAR(3), namnLarare CHAR(20), lonLarare INT, foddLarare DATETIME)
+~~
+SHOW TABLES

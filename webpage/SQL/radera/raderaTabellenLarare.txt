@@ -1,0 +1,5 @@
+Radera tabellen Larare
+~~
+DROP TABLE larare
+~~
+SELECT * FROM larare

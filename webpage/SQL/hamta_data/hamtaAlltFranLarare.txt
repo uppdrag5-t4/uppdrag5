@@ -1,0 +1,3 @@
+Hämta allt från tabellen Lärare
+~~
+SELECT * FROM larare

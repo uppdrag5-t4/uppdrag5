@@ -29,22 +29,33 @@ header h1 {
 	padding: 0 20px;
 }
 
-#navlist a, #navlist span {
+#navlist form {
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+	margin: 0;
+}
+
+#navlist span {
 	line-height: 40px;
 	color: ghostwhite;
 }
 
-#navlist a {
+#navlist form input[type=submit] {
 	font-size: 20px;
-	text-decoration: none;
-	vertical-align: top;
+	vertical-align: middle;
 	cursor: pointer;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	outline: 0;
+	color: ghostwhite;
+	padding-top: 8px;
 
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
-#navlist a:hover { text-shadow: 0 0 3px #FFF; }
+#navlist form input[type=submit]:hover { text-shadow: 0 0 3px #FFF; }
 
 #navlist span {
 	font-size: 30px;

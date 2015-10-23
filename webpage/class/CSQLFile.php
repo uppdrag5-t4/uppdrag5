@@ -1,12 +1,12 @@
 <?php
 
 class CSQLFile {
-	private $_filename;
-	private $_instruction;
-	private $_sql;
-	private $_res;
-	private $_con;
-	private $_html;
+	private $_filename;			# Filnamnet
+	private $_instruction;		# Instruktionen
+	private $_sql;				# SQL-frågan
+	private $_res;				# Resultat-frågan (SQL)
+	private $_con;				# Uppkopplingsvariabeln
+	private $_html;				# HTML-koden som retuneras
 
 	public function __construct($filename) {
 		# Spara referensen till sql-filen
@@ -26,14 +26,22 @@ class CSQLFile {
 	}
 
 	private function _readFileParts() {
-		# Hämta innehållet i sql-filen
-		$file 	= 	file_get_contents($this->_filename);
-		$json 	= 	json_decode($file);
+		# Hämta innehållet i sql-filen och formatera det
+		$file 	= 	trim(file_get_contents($this->_filename));
+		$format =	preg_replace('/\n/', '', $file);
+
+		# Dela upp strängen i två eller tre delar
+		$parts = explode('~~', $format);
 
 		# Läs in insormationen från sql-filen och spara den i variablerna
-		$this->_instruction 	= 	$json->ins;
-		$this->_sql 			=	$json->sql;
-		$this->_res 			=	$json->res;
+		$this->_instruction 	= 	$parts[0];
+		$this->_sql 			=	$parts[1];
+
+		# Om de båda SQL-uttrycken är samma så kan man skippa att skriva den sista
+		if (count($parts) == 3)
+			$this->_res 		=	$parts[2];
+		else
+			$this->_res 		= 	$parts[1];
 	}
 
 	private function _executeStatements($sql) {

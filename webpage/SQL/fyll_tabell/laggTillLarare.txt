@@ -1,0 +1,7 @@
+Lägg till lärare i tabellen Lärare
+~~
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare) VALUES('ACA', 'APS', 'Anders', '15000', '1967-09-07 00:00:00');
+
+INSERT INTO larare(akronymLarare, avdelningLarare, namnLarare, lonLarare, foddLarare) VALUES('ACA', 'APS', 'Andreas', '15000', '1988-08-07 00:00:00');
+~~
+SELECT * FROM larare
